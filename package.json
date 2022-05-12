@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "net": "^1.0.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "proxy",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyroflaw/proxy-server.git"
+  },
+  "keywords": [
+    "proxy",
+    "node.js"
+  ],
+  "author": "gyroflaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyroflaw/proxy-server/issues"
+  },
+  "homepage": "https://github.com/gyroflaw/proxy-server#readme",
+  "description": ""
+}
