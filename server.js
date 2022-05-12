@@ -1,6 +1,12 @@
 // Import of net module
 const net = require("net");
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 const server = net.createServer();
+
+const PORT = process.env.PORT || 8080;
 
 server.on("connection", (clientToProxySocket) => {
   console.log("Client connected to proxy");
@@ -66,9 +72,9 @@ server.on("close", () => {
 server.listen(
   {
     host: "0.0.0.0",
-    port: 8080,
+    port: PORT,
   },
   () => {
-    console.log("Server listening on 0.0.0.0:8080");
+    console.log(`Server listening on 0.0.0.0:${PORT}`);
   }
 );
