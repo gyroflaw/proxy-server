@@ -6,7 +6,7 @@ dotenv.config();
 
 const server = net.createServer();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 27017;
 
 server.on("connection", (clientToProxySocket) => {
   console.log("Client connected to proxy");
